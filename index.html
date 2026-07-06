@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Dicas Práticas — Blog de Desenvolvimento</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #d42d70;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Container que organiza as caixas lado a lado */
+        .container-dicas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilo base de cada caixa (Retangular) */
+        .card-dica {
+            background-color: #FFFFFF;
+            border-left: 6px solid #d42d70;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            width: 300px;
+            padding: 25px;
+            text-align: left;
+            transition: all 0.3s ease; /* Cria o efeito de transição suave */
+            cursor: pointer;
+        }
+
+        /* 🌟 O SEGREDO DO EFEITO: Muda de cor e sobe ao aproximar o mouse */
+        .card-dica:hover {
+            background-color: #bd346b; /* Nova cor de fundo */
+            border-left-color: #1A3957;  /* Muda a cor da barrinha lateral */
+            color: #FFFFFF;            /* Muda o texto para branco para dar leitura */
+            transform: translateY(-8px); /* Faz o card subir de leve */
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Garante que o código dentro do card fique visível no hover */
+        .card-dica:hover code {
+            background-color: rgba(255,255,255,0.2);
+            color: #FFFFFF;
+        }
+
+        .card-dica h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-dica p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #d42d70;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Botão para voltar para o blog */
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background-color: #1A3957;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-voltar:hover {
+            background-color: #d42d70;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💡 Central de Dicas de HTML e CSS</h1>
+        <p>Passe o mouse por cima dos cartões para revelar as instruções e truques!</p>
+    </header>
+
+    <div class="container-dicas">
+
+        <!-- CARD 1: Centralizar Imagens -->
+        <div class="card-dica">
+            <h3>🖼️ Centralizar Imagens</h3>
+            <p>Para alinhar o mascote ou fotos no meio da tela, use no CSS:</p>
+            <p><code>display: block;</code><br><code>margin: 0 auto;</code></p>
+            <p>Evita que ela quebre o layout colando nas bordas!</p>
+        </div>
+
+        <!-- CARD 2: Linhas Divisórias -->
+        <div class="card-dica">
+            <h3>➖ Separar Postagens</h3>
+            <p>Use a tag <code>&lt;hr&gt;</code> para criar linhas horizontais automáticas de divisão.</p>
+            <p>Ela ajuda a limpar o design e separar o diário de aulas de forma elegante.</p>
+        </div>
+
+        <!-- CARD 3: Caixas Invisíveis -->
+        <div class="card-dica">
+            <h3>📦 Entendendo as Divs</h3>
+            <p>A tag <code>&lt;div&gt;</code> serve como uma caixa vazia para agrupar e organizar blocos de código.</p>
+            <p>Dica: Sempre lembre de fechá-la com <code>&lt;/div&gt;</code> para não quebrar o site!</p>
+        </div>
+
+        <!-- CARD 4: Erro Crítico do VS Code -->
+        <div class="card-dica">
+            <h3>💻 Abrir o VS Code</h3>
+            <p>Se tiver travado no GitHub, lembre-se de <strong>clonar</strong> o repositório e abrir a pasta local correta no VS Code.</p>
+            <p>Só assim o Live Server vai funcionar direitinho!</p>
+        </div>
+
+        <!-- CARD 5: Atalho Salvador -->
+        <div class="card-dica">
+            <h3>💾 Não perca o código</h3>
+            <p>O atalho mais importante no laboratório é o <code>Ctrl + S</code>.</p>
+            <p>Salve o arquivo a cada alteração ou o navegador não mostrará os novos códigos.</p>
+        </div>
+
+        <!-- CARD 6: Meta do Prazo -->
+        <div class="card-dica">
+            <h3>🚨 Prazo da Alura</h3>
+            <p>A entrega parcial será no dia <strong>10/07</strong>.</p>
+            <p>Organize suas tarefas para deixar todas as atividades prontas até a <strong>Aula 4</strong>!</p>
+        </div>
+
+    </div>
+
+    <center>
+        <a href="index.html" class="btn-voltar">⬅️ Voltar para o Blog da Turma</a>
+    </center>
+
+</body>
+</html>
